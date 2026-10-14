@@ -1,0 +1,33 @@
+exec swaybg -i ~/wall-1.png -m fill -o eDP-1
+# exec nm-applet
+exec --no-startup-id pipewire
+exec --no-startup-id pipewire-pulse
+exec --no-startup-id wireplumber
+
+bar {
+    font JetBrainsMono Nerd Font 11
+    height 30
+
+    position top
+    # status_command i3status
+    separator_symbol "|"
+    status_command python3 ~/.config/sway/status.py
+    # status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+ #   swaybar_command waybar
+    colors {
+        background #000000 
+        # #191d24
+        statusline #eceff4 
+        separator  #eceff4 
+
+        # State             Border  BG      Text
+        focused_workspace   #97b67c #97b67c #191d24
+        active_workspace    #97b67c #000000 #eceff4
+        inactive_workspace  #191d24 #000000 #434c5e
+        urgent_workspace    #b74e58 #000000 #eceff4
+    }
+}
+
+include /etc/sway/config.d/*
+include ~/.config/sway/binds.conf
+include ~/.config/sway/base.conf
