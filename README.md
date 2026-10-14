@@ -1,10 +1,12 @@
 # freebsd-dots
-My FreeBSD + XFCE4 setup
+My FreeBSD + SwayFX setup.
 
 # Screenshots
 
-![las](./screens/screen-1.png)
-![lus](./screens/screen-2.png)
+![las](./screens/screenshot-14-21-55-10.png)
+![lus](./screens/screenshot-14-21-51-39.png)
+![lis](./screens/screenshot-14-21-51-39.png)
+![les](./screens/screenshot-11-22-19-06.png)
 
 # Dependencies:
-dbus, xorg, lightdm, xfce4, lightdm-gtk-greeter, alacritty, bash, xfce4 base apps, drm-kmod, linux emulation.
+dbus, xorg, wayland, swayfx, wlroots, swaylock, wofi, alacritty, bash, seatd, bazu, consolekit2, drm-kmod, linux emulation.
